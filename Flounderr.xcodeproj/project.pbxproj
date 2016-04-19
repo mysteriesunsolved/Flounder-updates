@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E34A03D1C9B5BCE00E6E406 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34A03C1C9B5BCE00E6E406 /* LoginViewController.swift */; };
+		4E34A0411C9B60F400E6E406 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34A0401C9B60F400E6E406 /* User.swift */; };
+		4E5B86CC1C8927750017FC24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B86CB1C8927750017FC24 /* AppDelegate.swift */; };
+		4E5B86CE1C8927750017FC24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B86CD1C8927750017FC24 /* ViewController.swift */; };
+		4E5B86D11C8927750017FC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B86CF1C8927750017FC24 /* Main.storyboard */; };
+		4E5B86D31C8927750017FC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B86D21C8927750017FC24 /* Assets.xcassets */; };
+		4E5B86D61C8927750017FC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B86D41C8927750017FC24 /* LaunchScreen.storyboard */; };
+		A7565F171CB72C1F003BB5B4 /* RegexHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */; };
+		A7ACF4BD1CA2524400F0943D /* tesseractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */; };
+		A7F763C61CA8F0A80062A51D /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F763C51CA8F0A80062A51D /* libstdc++.tbd */; };
+		A7F763C81CA8F0FA0062A51D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F763C71CA8F0FA0062A51D /* CoreImage.framework */; };
+		A7F763CE1CA8F56C0062A51D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A7F763CD1CA8F56C0062A51D /* tessdata */; };
+		A7F763D41CA912EA0062A51D /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F763D31CA912EA0062A51D /* TesseractOCR.framework */; };
+		E112B9849B7C5C564BD250A6 /* Pods_Flounderr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D382DDFDE6D511889A8403 /* Pods_Flounderr.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B152EF075E9A7A78514EB25 /* Pods-Flounderr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flounderr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flounderr/Pods-Flounderr.release.xcconfig"; sourceTree = "<group>"; };
+		4E34A03C1C9B5BCE00E6E406 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4E34A0401C9B60F400E6E406 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E5B86C81C8927750017FC24 /* Flounderr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flounderr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5B86CB1C8927750017FC24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E5B86CD1C8927750017FC24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E5B86D01C8927750017FC24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E5B86D21C8927750017FC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E5B86D51C8927750017FC24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E5B86D71C8927750017FC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D382DDFDE6D511889A8403 /* Pods_Flounderr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flounderr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92842B18808107C510F7B473 /* Pods-Flounderr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flounderr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flounderr/Pods-Flounderr.debug.xcconfig"; sourceTree = "<group>"; };
+		A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexHelpers.swift; sourceTree = "<group>"; };
+		A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tesseractViewController.swift; sourceTree = "<group>"; };
+		A7F763C51CA8F0A80062A51D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A7F763C71CA8F0FA0062A51D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A7F763C91CA8F5380062A51D /* Flounderr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flounderr-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7F763CD1CA8F56C0062A51D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		A7F763D31CA912EA0062A51D /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E5B86C51C8927750017FC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F763D41CA912EA0062A51D /* TesseractOCR.framework in Frameworks */,
+				A7F763C81CA8F0FA0062A51D /* CoreImage.framework in Frameworks */,
+				A7F763C61CA8F0A80062A51D /* libstdc++.tbd in Frameworks */,
+				E112B9849B7C5C564BD250A6 /* Pods_Flounderr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43CCE3F7A2E2C2BAEDDE57D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92842B18808107C510F7B473 /* Pods-Flounderr.debug.xcconfig */,
+				0B152EF075E9A7A78514EB25 /* Pods-Flounderr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E5B86BF1C8927750017FC24 = {
+			isa = PBXGroup;
+			children = (
+				4E5B86CA1C8927750017FC24 /* Flounderr */,
+				4E5B86C91C8927750017FC24 /* Products */,
+				43CCE3F7A2E2C2BAEDDE57D4 /* Pods */,
+				D21BCA4D08EACD951632DD51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E5B86C91C8927750017FC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E5B86C81C8927750017FC24 /* Flounderr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E5B86CA1C8927750017FC24 /* Flounderr */ = {
+			isa = PBXGroup;
+			children = (
+				A7F763D31CA912EA0062A51D /* TesseractOCR.framework */,
+				A7F763CD1CA8F56C0062A51D /* tessdata */,
+				4E5B86CB1C8927750017FC24 /* AppDelegate.swift */,
+				4E5B86CD1C8927750017FC24 /* ViewController.swift */,
+				4E5B86CF1C8927750017FC24 /* Main.storyboard */,
+				4E5B86D21C8927750017FC24 /* Assets.xcassets */,
+				4E5B86D71C8927750017FC24 /* Info.plist */,
+				4E5B86D41C8927750017FC24 /* LaunchScreen.storyboard */,
+				4E34A03C1C9B5BCE00E6E406 /* LoginViewController.swift */,
+				4E34A0401C9B60F400E6E406 /* User.swift */,
+				A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */,
+				A7F763C91CA8F5380062A51D /* Flounderr-Bridging-Header.h */,
+				A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */,
+			);
+			path = Flounderr;
+			sourceTree = "<group>";
+		};
+		D21BCA4D08EACD951632DD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7F763C71CA8F0FA0062A51D /* CoreImage.framework */,
+				A7F763C51CA8F0A80062A51D /* libstdc++.tbd */,
+				77D382DDFDE6D511889A8403 /* Pods_Flounderr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E5B86C71C8927750017FC24 /* Flounderr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5B86DA1C8927750017FC24 /* Build configuration list for PBXNativeTarget "Flounderr" */;
+			buildPhases = (
+				73E3A352CA6B47DE2FF7668D /* Check Pods Manifest.lock */,
+				4E5B86C41C8927750017FC24 /* Sources */,
+				4E5B86C51C8927750017FC24 /* Frameworks */,
+				4E5B86C61C8927750017FC24 /* Resources */,
+				859D4152B8E5E25EE41E4893 /* Embed Pods Frameworks */,
+				99C32E8A8CCE5C97EA64AA1C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flounderr;
+			productName = Flounderr;
+			productReference = 4E5B86C81C8927750017FC24 /* Flounderr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E5B86C01C8927750017FC24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Flounderr;
+				TargetAttributes = {
+					4E5B86C71C8927750017FC24 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 4E5B86C31C8927750017FC24 /* Build configuration list for PBXProject "Flounderr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E5B86BF1C8927750017FC24;
+			productRefGroup = 4E5B86C91C8927750017FC24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E5B86C71C8927750017FC24 /* Flounderr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E5B86C61C8927750017FC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5B86D61C8927750017FC24 /* LaunchScreen.storyboard in Resources */,
+				A7F763CE1CA8F56C0062A51D /* tessdata in Resources */,
+				4E5B86D31C8927750017FC24 /* Assets.xcassets in Resources */,
+				4E5B86D11C8927750017FC24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73E3A352CA6B47DE2FF7668D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		859D4152B8E5E25EE41E4893 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flounderr/Pods-Flounderr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C32E8A8CCE5C97EA64AA1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flounderr/Pods-Flounderr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E5B86C41C8927750017FC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E34A0411C9B60F400E6E406 /* User.swift in Sources */,
+				A7565F171CB72C1F003BB5B4 /* RegexHelpers.swift in Sources */,
+				4E34A03D1C9B5BCE00E6E406 /* LoginViewController.swift in Sources */,
+				A7ACF4BD1CA2524400F0943D /* tesseractViewController.swift in Sources */,
+				4E5B86CE1C8927750017FC24 /* ViewController.swift in Sources */,
+				4E5B86CC1C8927750017FC24 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E5B86CF1C8927750017FC24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E5B86D01C8927750017FC24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E5B86D41C8927750017FC24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E5B86D51C8927750017FC24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E5B86D81C8927750017FC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E5B86D91C8927750017FC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E5B86DB1C8927750017FC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92842B18808107C510F7B473 /* Pods-Flounderr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flounderr",
+					"$(PROJECT_DIR)/Flounderr/tessdata",
+				);
+				INFOPLIST_FILE = Flounderr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = " -lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flounderr.Flounderr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flounderr/Flounderr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E5B86DC1C8927750017FC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B152EF075E9A7A78514EB25 /* Pods-Flounderr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flounderr",
+					"$(PROJECT_DIR)/Flounderr/tessdata",
+				);
+				INFOPLIST_FILE = Flounderr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = " -lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flounderr.Flounderr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flounderr/Flounderr-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E5B86C31C8927750017FC24 /* Build configuration list for PBXProject "Flounderr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5B86D81C8927750017FC24 /* Debug */,
+				4E5B86D91C8927750017FC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E5B86DA1C8927750017FC24 /* Build configuration list for PBXNativeTarget "Flounderr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5B86DB1C8927750017FC24 /* Debug */,
+				4E5B86DC1C8927750017FC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E5B86C01C8927750017FC24 /* Project object */;
+}
