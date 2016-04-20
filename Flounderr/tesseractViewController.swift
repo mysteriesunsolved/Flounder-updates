@@ -9,6 +9,7 @@
 
 import UIKit
 import Foundation
+import Parse
 
 //Tesseract infor learnt from Ray Wenderlich tutorial
 
@@ -365,7 +366,11 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         
         print(event)
         
+        UserMedia.postUserPost(event, user: PFUser.currentUser()! ,completion: nil)
+        
         //not going to worry about empty text fields right now
+        
+        
         
     
     }

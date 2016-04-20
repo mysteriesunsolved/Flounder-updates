@@ -15,6 +15,11 @@
 		4E5B86D31C8927750017FC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B86D21C8927750017FC24 /* Assets.xcassets */; };
 		4E5B86D61C8927750017FC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B86D41C8927750017FC24 /* LaunchScreen.storyboard */; };
 		A7565F171CB72C1F003BB5B4 /* RegexHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */; };
+		A7AB52051CC702AA00432AD6 /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB52041CC702A900432AD6 /* UserMedia.swift */; };
+		A7AB52071CC704F000432AD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB52061CC704F000432AD6 /* HomeViewController.swift */; };
+		A7AB52091CC705EF00432AD6 /* postViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB52081CC705EF00432AD6 /* postViewCellTableViewCell.swift */; };
+		A7AB520D1CC710C400432AD6 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB520C1CC710C400432AD6 /* MessageTableViewCell.swift */; };
+		A7AB520F1CC744E100432AD6 /* CarpoolRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB520E1CC744E100432AD6 /* CarpoolRequestViewController.swift */; };
 		A7ACF4BD1CA2524400F0943D /* tesseractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */; };
 		A7F763C61CA8F0A80062A51D /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F763C51CA8F0A80062A51D /* libstdc++.tbd */; };
 		A7F763C81CA8F0FA0062A51D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F763C71CA8F0FA0062A51D /* CoreImage.framework */; };
@@ -37,6 +42,11 @@
 		77D382DDFDE6D511889A8403 /* Pods_Flounderr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flounderr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92842B18808107C510F7B473 /* Pods-Flounderr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flounderr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flounderr/Pods-Flounderr.debug.xcconfig"; sourceTree = "<group>"; };
 		A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexHelpers.swift; sourceTree = "<group>"; };
+		A7AB52041CC702A900432AD6 /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
+		A7AB52061CC704F000432AD6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7AB52081CC705EF00432AD6 /* postViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		A7AB520C1CC710C400432AD6 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		A7AB520E1CC744E100432AD6 /* CarpoolRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarpoolRequestViewController.swift; sourceTree = "<group>"; };
 		A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tesseractViewController.swift; sourceTree = "<group>"; };
 		A7F763C51CA8F0A80062A51D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		A7F763C71CA8F0FA0062A51D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -103,6 +113,11 @@
 				A7ACF4BC1CA2524400F0943D /* tesseractViewController.swift */,
 				A7F763C91CA8F5380062A51D /* Flounderr-Bridging-Header.h */,
 				A7565F161CB72C1F003BB5B4 /* RegexHelpers.swift */,
+				A7AB52041CC702A900432AD6 /* UserMedia.swift */,
+				A7AB52061CC704F000432AD6 /* HomeViewController.swift */,
+				A7AB52081CC705EF00432AD6 /* postViewCellTableViewCell.swift */,
+				A7AB520C1CC710C400432AD6 /* MessageTableViewCell.swift */,
+				A7AB520E1CC744E100432AD6 /* CarpoolRequestViewController.swift */,
 			);
 			path = Flounderr;
 			sourceTree = "<group>";
@@ -243,9 +258,14 @@
 				4E34A0411C9B60F400E6E406 /* User.swift in Sources */,
 				A7565F171CB72C1F003BB5B4 /* RegexHelpers.swift in Sources */,
 				4E34A03D1C9B5BCE00E6E406 /* LoginViewController.swift in Sources */,
+				A7AB52071CC704F000432AD6 /* HomeViewController.swift in Sources */,
+				A7AB520D1CC710C400432AD6 /* MessageTableViewCell.swift in Sources */,
 				A7ACF4BD1CA2524400F0943D /* tesseractViewController.swift in Sources */,
 				4E5B86CE1C8927750017FC24 /* ViewController.swift in Sources */,
 				4E5B86CC1C8927750017FC24 /* AppDelegate.swift in Sources */,
+				A7AB52091CC705EF00432AD6 /* postViewCellTableViewCell.swift in Sources */,
+				A7AB52051CC702AA00432AD6 /* UserMedia.swift in Sources */,
+				A7AB520F1CC744E100432AD6 /* CarpoolRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
