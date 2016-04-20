@@ -24,8 +24,6 @@ class UserMedia: NSObject {
             media["media"] = post! as String
             media["author"] = user
             
-            media["likesCount"] = 0
-            media["commentsCount"] = 0
             media["username"] = PFUser.currentUser()!.username
         
             
@@ -37,18 +35,20 @@ class UserMedia: NSObject {
         }
     
     
-    class func postUserRequest(textRequest: String?, user: PFUser,  completion: PFBooleanResultBlock?) {
+    class func postUserRequest(textRequest: String?, sender: PFUser, recipient: PFUser , completion: PFBooleanResultBlock?) {
         // Create Parse object PFObject
         
         
         let message = PFObject(className: "Message")
-        message["author"] = user
+        message["author"] = sender
+        message["recipient"] = recipient
         message["request"] = textRequest
         
         message["likesCount"] = 0
         message["commentsCount"] = 0
         message["username"] = PFUser.currentUser()!.username
-        var privateACL = PFACL.accessibilityIncrement()
+        
+        message.ACL = PFACL(user: recipient)
         
         
         

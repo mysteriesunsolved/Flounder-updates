@@ -11,6 +11,8 @@ import Parse
 
 
 class postViewCellTableViewCell: UITableViewCell {
+    
+    //this view cell allows users to press the carpool button
 
     @IBOutlet var postLabel: UILabel!
     @IBOutlet var carpoolRequestButton: UIButton!
@@ -24,9 +26,9 @@ class postViewCellTableViewCell: UITableViewCell {
                 postLabel.text = postText
                 postLabel.sizeToFit()
                 
-            let user = post!["author"] as? String
-                if user != nil {
-                    print("The author you are sending this message to is: \(user)")
+            let recipient = post!["author"] as? String
+                if recipient != nil {
+                    print("The author you are sending this message to is: \(recipient)")
                 }
                 
             }
@@ -64,7 +66,7 @@ class postViewCellTableViewCell: UITableViewCell {
             
             if (name != nil && phoneNumber != nil )
             {
-                UserMedia.postUserRequest("\(name!) would like to carpool with you to an event. Contact them at \(phoneNumber!) if you agree!", user: PFUser.currentUser()!,completion: nil)
+                UserMedia.postUserRequest("\(name!) would like to carpool with you to an event. Contact them at \(phoneNumber!) if you agree!", sender: PFUser.currentUser()!, recipient: self.post!["author"] as! PFUser , completion: nil)
             } 
             alert.dismissViewControllerAnimated(true, completion: nil)
         }
