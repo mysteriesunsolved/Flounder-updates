@@ -12,19 +12,28 @@ import Foundation
 
 //Tesseract infor learnt from Ray Wenderlich tutorial
 
-class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
    
+    @IBOutlet var eventTimeText: UITextField!
+    @IBOutlet var eventNameText: UITextField!
+    @IBOutlet var dateText: UITextField!
+    @IBOutlet var eventAddressText: UITextField!
+    @IBOutlet var departTimeText: UITextField!
     
+    @IBOutlet var leavingFromText: UITextField!
     
     @IBOutlet var recognisedTextView: UITextView!
     
+    @IBOutlet var nameText: UITextField!
     var activityIndicator:UIActivityIndicatorView!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.eventNameText.delegate = self
         
         //instantiates camera on first glance if camera is available
         if UIImagePickerController.isSourceTypeAvailable(.Camera)
@@ -166,15 +175,13 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         
             let input = recognisedTextView.text as String
         
-        let regex = try! NSRegularExpression(pattern: "Jan(uary)?", options: NSRegularExpressionOptions.CaseInsensitive)
-        print("hi1")
-        print(regex)
-        
-        //get hanuel to type this up
-        let name = regex.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count))
-        if name != nil {
+        let regex1 = try! NSRegularExpression(pattern: "Jan(uary)?", options: NSRegularExpressionOptions.CaseInsensitive)
+               //get hanuel to type this up
+        let name1 = regex1.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count))
+        if name1 != nil {
             
             print("January")
+            dateText.text = "January"
 
         }
         
@@ -186,6 +193,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name2 != nil {
             
             print("February")
+            dateText.text = "February"
             
         }
         
@@ -194,6 +202,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name3 != nil {
             
             print("March")
+            dateText.text = "March"
             
         }
         let regex4 = try! NSRegularExpression(pattern: "Apr(il)?", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -201,6 +210,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name4 != nil {
             
             print("April")
+            dateText.text = "April"
             
         }
         let regex5 = try! NSRegularExpression(pattern: "May", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -208,6 +218,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name5 != nil {
             
             print("May")
+            dateText.text = "May"
             
         }
         
@@ -216,6 +227,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name6 != nil {
             
             print("June")
+            dateText.text = "June"
             
         }
         let regex7 = try! NSRegularExpression(pattern: "Jul(y)?", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -223,6 +235,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name7 != nil {
             
             print("July")
+            dateText.text = "July"
             
         }
 
@@ -231,6 +244,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name8 != nil {
             
             print("August")
+            dateText.text = "August"
             
         }
         let regex9 = try! NSRegularExpression(pattern: "Sep(tember)?", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -238,13 +252,15 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name9 != nil {
             
             print("September")
+            dateText.text = "September"
             
         }
         let regex10 = try! NSRegularExpression(pattern: "Oct(tober)?", options: NSRegularExpressionOptions.CaseInsensitive)
         let name10 = regex10.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count))
         if name10 != nil {
             
-            print("August")
+            print("October")
+            dateText.text = "October"
             
         }
         let regex11 = try! NSRegularExpression(pattern: "Nov(ember)?", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -252,6 +268,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name11 != nil {
             
             print("November")
+            dateText.text = "November"
             
         }
         let regex12 = try! NSRegularExpression(pattern: "Dec(ember)?", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -259,6 +276,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name12 != nil {
             
             print("December")
+            dateText.text = "December"
             
         }
         
@@ -267,7 +285,7 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         let name13 = regex13.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count))
         if name13 != nil {
             
-            print("2016")
+            dateText.text? = dateText.text! + "2016"
             
         }
         let regex14 = try! NSRegularExpression(pattern: "2017", options: NSRegularExpressionOptions.CaseInsensitive)
@@ -275,8 +293,28 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         if name14 != nil {
             
             print("2017")
+            dateText.text? = dateText.text! + "2016"
             
         }
+        let regex15 = try! NSRegularExpression(pattern: "2013", options: NSRegularExpressionOptions.CaseInsensitive)
+        let name15 = regex15.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count))
+        if name15 != nil {
+            
+            dateText.text? = dateText.text! + " " + "2013"
+            
+        }
+        
+        //it gets the wrong address because of Tesseract's Crappy Recognition but if it was like England or something, it would recognise AND extract. So success I guess.
+        let pattern = "[a-zA-Z]+[,]\\s*([A-Z]{2})"
+        let resultFinal = String(regMatchGroup(pattern, text: recognisedTextView.text))
+        
+        //to get the date if written in 3/4/16 format but doesn't work properly with what we have
+        let pattern1 = "(\\d{1,2}[-/.]\\d{1,2}[-/.]\\d{1,2})|(Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\\s*(\\d{1,2}(st|nd|rd|th)?+)?[,]\\s*\\d{4}"
+        let resultFinal1 = String(regMatchGroup(pattern1, text: recognisedTextView.text))
+
+        print(resultFinal)
+        eventAddressText.text = resultFinal
+        print(resultFinal1)
         removeActivityIndicator()
         
         
@@ -298,6 +336,8 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
         
         
     }
+    
+    //extract matching pieces of text like the address
     func regMatchGroup(regex: String, text: String) -> [[String]] {
     
             var resultsFinal = [[String]]()
@@ -318,7 +358,16 @@ class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePick
     
     
    
-    //will have to add a swap text feature so we can autocorrect after text has been added
-    //use swap text feature for dates. If satur- then saturday etc
+   
+    @IBAction func postText(sender: AnyObject) {
+        
+        let event = "\(nameText.text!) is going to \(eventNameText.text!) at \(eventTimeText.text!), \(dateText.text!). \n Event Location: \(eventAddressText.text!) \n Departing From: \(leavingFromText.text!) \n Departing At: \(departTimeText.text!)"
+        
+        print(event)
+        
+        //not going to worry about empty text fields right now
+        
+    
+    }
 
 }
