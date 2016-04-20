@@ -9,6 +9,8 @@
 import UIKit
 import Parse
 
+//this is the view controller where the user can view all the requests they've gotten
+
 class CarpoolRequestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var messageTableView: UITableView!

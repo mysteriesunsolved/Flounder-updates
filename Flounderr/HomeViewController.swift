@@ -10,6 +10,8 @@ import UIKit
 import Parse
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    //this is where the user can view posts and send carpool requests
 
     
     @IBOutlet var tableView: UITableView!

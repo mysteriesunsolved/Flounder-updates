@@ -12,7 +12,7 @@ import Parse
 
 class postViewCellTableViewCell: UITableViewCell {
     
-    //this view cell allows users to press the carpool button
+    //this view cell allows users to press the carpool button and send a message to the event poster 
 
     @IBOutlet var postLabel: UILabel!
     @IBOutlet var carpoolRequestButton: UIButton!

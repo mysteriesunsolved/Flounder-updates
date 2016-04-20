@@ -14,7 +14,7 @@ import Parse
 class UserMedia: NSObject {
     
     
-    
+    //event post
         
     class func postUserPost(post: String?, user: PFUser, completion: PFBooleanResultBlock?) {
             // Create Parse object PFObject
@@ -34,6 +34,7 @@ class UserMedia: NSObject {
             
         }
     
+    //carpool request
     
     class func postUserRequest(textRequest: String?, sender: PFUser, recipient: PFUser , completion: PFBooleanResultBlock?) {
         // Create Parse object PFObject
@@ -48,7 +49,7 @@ class UserMedia: NSObject {
         message["commentsCount"] = 0
         message["username"] = PFUser.currentUser()!.username
         
-        message.ACL = PFACL(user: recipient)
+        message.ACL = PFACL(user: recipient) //makes it so that only the person receiving carpool requests can view it
         
         
         
@@ -60,7 +61,7 @@ class UserMedia: NSObject {
         message.saveInBackgroundWithBlock(completion)
     }
     
-    
+    //fetch event data
     class func fetchData(post: String?, completion: (posts: [PFObject]?, error: NSError? ) -> ()){
         var query: PFQuery
         
@@ -92,6 +93,8 @@ class UserMedia: NSObject {
         }
         
     }
+    
+    //fetch message - request data
     
     class func fetchMessages(message: String?, completion: (message: [PFObject]?, error: NSError? ) -> ()){
         var query: PFQuery

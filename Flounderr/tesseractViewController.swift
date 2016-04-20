@@ -13,6 +13,8 @@ import Parse
 
 //Tesseract infor learnt from Ray Wenderlich tutorial
 
+//this is where the user uses tesseract and posts an event
+
 class tesseractViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
    

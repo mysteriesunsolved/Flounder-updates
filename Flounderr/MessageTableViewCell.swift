@@ -11,7 +11,7 @@ import Parse
 
 class MessageTableViewCell: UITableViewCell {
     
-    
+    //this just displays the message
 
     @IBOutlet var inboxRequestText: UILabel!
     
